@@ -1,0 +1,115 @@
+<?php
+	defined('APPLICATION_ENV') || define('APPLICATION_ENV', (getenv('APPLICATION_ENV') ? getenv('APPLICATION_ENV') : 'development'));
+
+	// Report simple running errors
+	error_reporting(E_ERROR | E_WARNING | E_PARSE);
+
+	//DB帳號設定
+	switch(APPLICATION_ENV)
+	{
+		// case 'STA':
+		case "development":
+			// STA DB設定
+			define("MYSQL_HOST", "192.168.0.252");
+			define("MYSQL_DB", "maritimeera");
+			define("MYSQL_LN", "maritimeerasta");
+			define("MYSQL_PW", "cEVvu8JB");
+
+			// STA 相關資料夾路徑
+			define("DOC_ROOT", '/var/www/html/maritimeera.hiiir.com/trunk/public/');
+			define("ACTION_PATH", DOC_ROOT.'action');
+			define("CONFIG_PATH", '/var/www/html/maritimeera.hiiir.com/trunk/config/');
+			define("LIB_PATH", '/var/www/html/maritimeera.hiiir.com/trunk/library/');
+			define("ERR_LOG_PATH", '/var/www/html/maritimeera.hiiir.com/trunk/error_log/');
+
+			// STA PNS推播設定
+			// define('PNS_KEY', '8b3b0321b4506dffe3274a6121e73097');
+			// define('PNS_MASTER', '651ae189eb7389dbc48dacbe3f65627d');
+			
+			// STA FB APP設定
+			define('APP_ID', '571449042888237');
+			define('APP_SECRECT', '76a351bf2ed4d310a06bccec0d224821');
+			
+			// STA CACHE 設定
+			define('CACHE_IP', "192.168.0.252"); 	//Memcache IP
+			define('CACHE_NAME', "maritimeera_");			//Cache名稱Staging
+			
+			$SERVICE = '海商紀元開發站';
+			$SERVICE_NAME = '海商紀元開發站';//View Title Name
+			$SERVER_HOST = 'http://maritimeerasta.hiiir.com/';
+			break;
+		case 'TEST':
+			//測試站 DB設定
+		/*
+			define('MASTER_HOST', '');
+			define('MASTER_NAME', '');
+			define('MASTER_USER', '');
+			define('MASTER_PASS', '');
+			define("DOC_ROOT", '');
+			//測試站 PNS推播設定
+			define('PNS_KEY', '');
+			define('PNS_MASTER', '');
+			//測試站 FB APP設定
+			define('APP_ID', '');
+			define('APP_SECRECT', '');
+			//測試站 CACHE 設定
+			define('CACHE_IP', ''); 	//Memcache IP
+			define('CACHE_NAME', 'TEST_');	//Cache名稱測試站
+			
+			$SERVER_HOST = 'http://';
+		*/
+			break;
+		case 'PRODUCTION':
+			//正式站 DB設定
+		
+			define("MYSQL_HOST", "10.10.10.25");
+			define("MYSQL_DB", "maritimeera");
+			define("MYSQL_LN", "maritimeera");
+			define("MYSQL_PW", "23xsd5TW");
+
+			// STA 相關資料夾路徑
+			define("DOC_ROOT", '/var/www/html/maritimeera.hiiir.com/trunk/public/');
+			define("ACTION_PATH", DOC_ROOT.'action');
+			define("CONFIG_PATH", '/var/www/html/maritimeera.hiiir.com/trunk/config/');
+			define("LIB_PATH", '/var/www/html/maritimeera.hiiir.com/trunk/library/');
+			define("ERR_LOG_PATH", '/var/www/html/maritimeera.hiiir.com/trunk/error_log/');
+
+			// STA PNS推播設定
+			// define('PNS_KEY', '8b3b0321b4506dffe3274a6121e73097');
+			// define('PNS_MASTER', '651ae189eb7389dbc48dacbe3f65627d');
+			
+			// STA FB APP設定
+			define('APP_ID', '473073516103046');
+			define('APP_SECRECT', '9c333b262bca2e6c241b00136b48493b');
+			
+			// STA CACHE 設定
+			define('CACHE_IP', "localhost"); 	//Memcache IP
+			define('CACHE_NAME', "maritimeera_");			//Cache名稱Staging
+			
+			$SERVICE = '海商紀元';
+			$SERVICE_NAME = '海商紀元';//View Title Name
+			$SERVER_HOST = 'http://maritimeera.hiiir.com/';
+		
+			break;
+	}	
+	
+	// define('SMS_USER', '410800');
+	// define('SMS_PASS', 'sym410800');
+	
+	$ROOTURL = $SERVER_HOST;
+	$IMGURL  = $SERVER_HOST."images/";
+	$INDEX   = "index.php";
+
+	//呼叫facebook lib用
+	$FBArr = array(
+		'appId' => APP_ID,
+		'secret' => APP_SECRECT,
+		'cookie' => true,
+   	);
+		
+	$scope = 'email,read_stream,publish_stream,user_photos,user_likes,offline_access';/*針對每個app須修改的scope*/
+
+	//粉絲頁ID
+	$fansId = "171150939702298";  // 海商紀元粉絲頁 Id
+	$fansUrl = "https://www.facebook.com/molome.me"; // 海商紀元粉絲頁 Id
+?>

@@ -1,0 +1,112 @@
+<?php include_once("header.tpl");?>
+    <script>
+        logClick(1);    
+    </script>
+    <div class="map">
+        <div class="Warpper">
+            <?php include_once("logo.tpl");?>            
+            <div class="mission1">
+                <a href="javascript: void(0);">
+                    <img src="images/mission_map1.png" width="202" height="183" />
+                </a>
+                <a href="javascript: void(0);">
+                    <img src="images/gem.gif" width="66" height="103" style="position: absolute; top: 35px; right: 15px;"/>
+                </a>
+            </div>
+
+            <div class="mission2">
+                <a href="javascript: void(0);">
+                    <img src="images/mission_map2.png" width="220" height="106" />
+                </a>
+            </div>
+
+            <div class="mission3">
+                <a href="javascript: void(0);">
+                    <img src="images/mission_map3.png" width="149" height="116" />
+                </a>
+            </div>
+
+            <div class="mission4">
+                <a href="javascript: void(0);">
+                    <img src="images/mission_map4.png" width="172" height="140" />
+                </a>
+            </div>
+
+            <div class="mission5">
+                <a href="javascript: void(0);">
+                    <img src="images/mission_map5.png" width="172" height="140" />
+                </a>
+            </div>
+
+            <div class="mission6">
+                <a href="javascript: void(0);">
+                    <img src="images/mission_map6.png" width="233" height="140" />
+                </a>
+            </div>
+
+
+            <div class="mission1_btn">
+                <a href="javascript: void(0);" class="mission_button">
+                    <img src="images/mission_name1.png" width="159" height="105" />
+                </a>
+            </div>
+            <div class="mission2_btn">
+                <a href="javascript: void(0);" class="mission_button">
+                    <img src="images/mission_name2.png" width="159" height="105" />
+                </a>
+            </div>
+
+            <div class="mission3_btn">
+                <a href="javascript: void(0);" class="mission_button">
+                    <img src="images/mission_name3.png" width="182" height="105" />
+                </a>
+            </div>
+
+            <div class="mission4_btn">
+                <a href="javascript: void(0);" class="mission_button">
+                    <img src="images/mission_name4.png" width="191" height="105" />
+                </a>
+            </div>
+
+            <div class="mission5_btn">
+                <a href="javascript: void(0);" class="mission_button">
+                    <img src="images/mission_name5.png" width="170" height="119" />
+                </a>
+            </div>
+
+            <div class="mission6_btn">
+                <a href="javascript: void(0);" class="mission_button">
+                    <img src="images/mission_name6.png" width="184" height="105" />
+                </a>
+            </div>
+
+            <div class="yellowball">
+                <a href="javascript: void(0);">
+                    <img src="images/bt_yellow.png" width="121" height="121" />
+                </a>
+            </div>
+
+            <div class="yellowball2">
+                <a href="javascript: void(0);">
+                    <img src="images/bt_yellow.png" width="121" height="121" />
+                </a>
+            </div>
+            <?php include_once("button.tpl");?>
+        </div>
+    </div>
+    <div id="view">        
+        <div id="intro">
+            <a id="link_login" href="javascript: linkClick(7);" 
+            style="position: absolute; bottom: 40px; left: 44px; width: 235px; height: 65px;">
+            </a>
+            <div class="gif">
+                <a id="link_map" href="javascript: linkClick(0);">
+                    <img src="images/bt_go.gif" width="153" height="105" />
+                </a>
+            </div>
+        </div>
+        <div id="black"></div>
+    </div>
+<?php include_once("show.tpl");?>
+<?php include_once("fb.tpl");?>
+<?php include_once("footer.tpl");?>

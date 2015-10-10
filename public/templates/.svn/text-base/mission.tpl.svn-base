@@ -1,0 +1,212 @@
+<div  style="display:none;">
+    <!-- 任務1 -->
+    <div id="m1block" class="m1block">
+        <a href="javascript: close();"><img src="images/bt_close.png" width="32" height="34" class="close"/></a>
+        <fb:like-box href="<?=$this->fansUrl?>" stream="false" header="false" Connections='0' height="95" style="position:absolute; top:160px; left:345px;"></fb:like-box>
+        <a href="javascript: closeFans();">
+            <img src="images/bt_next.png" width="146" height="41" style="position: absolute; bottom: 60px; left: 320px;"/>
+        </a>
+    </div>
+
+    <!-- 任務1 完成 -->
+    <div id="m1_2block">
+        <div class="m1_2block">
+            <a href="<?php echo $this->act['active']==1?"javascript: close(1);":"javascript: close();"?>">
+                <img src="images/bt_close.png" width="32" height="34" class="close"/>
+            </a>
+            <div class="num">
+                序號：<span></span>
+            </div>
+        </div>
+        <div class="nextbtn">
+            <a href="<?php echo $this->act['active']==1?"javascript: close(1);":"javascript: close();"?>">
+                <img src="images/bt_3.png" width="145" height="38"/>
+            </a>
+            <a href="http://me.molome.tw/news/get/460" target="_blank" style="position: absolute; right: 5px;">
+                <img src="images/sn.png" width="139" height="34"/>
+            </a>
+        </div>        
+    </div>
+
+    <!-- 任務2 -->
+    <div id="m2block" class="m2block">
+        <a href="javascript: close();">
+            <img src="images/bt_close.png" width="32" height="34" class="close"/>
+        </a>
+        <a href="javascript: inviteFriend(2);">
+            <img src="images/bt_4.png" width="201" height="38" style="position: absolute; bottom: 65px; left: 280px;"/>
+        </a>
+    </div>
+
+    <!-- 任務2 完成 -->
+    <div id="m2_2block">
+        <div class="m2_2block">
+            <a href="<?php echo $this->act['active']==2?"javascript: close(1);":"javascript: close();"?>">
+                <img src="images/bt_close.png" width="32" height="34" class="close"/>
+            </a>
+            <div class="num">
+                序號：<span></span>
+            </div>
+        </div>
+        <div class="nextbtn">
+            <a href="<?php echo $this->act['active']==2?"javascript: close(1);":"javascript: close();"?>">
+                <img src="images/bt_3.png" width="145" height="38"/>
+            </a>
+            <a href="http://me.molome.tw/news/get/460" target="_blank" style="position: absolute; right: 5px;">
+                <img src="images/sn.png" width="139" height="34"/>
+            </a>
+        </div>
+    </div>
+
+    <!-- 任務3 -->
+    <div id="m3block" class="m3block">
+        <a href="javascript: close();">
+            <img src="images/bt_close.png" width="32" height="34" class="close"/>
+        </a>
+        <a href="javascript: postMsg(<?php echo $this->act["active"]==3?1:0;?>);">
+            <img src="images/bt_5.png" width="200" height="38" style="position: absolute; bottom: 65px; left: 280px;"/>
+        </a>
+    </div>
+
+    <!-- 任務3 完成 -->
+    <div id="m3_2block">
+        <div class="m3_2block">
+            <a href="<?php echo $this->act['active']==3?"javascript: close(1);":"javascript: close();"?>">
+                <img src="images/bt_close.png" width="32" height="34" class="close"/>
+            </a>
+            <div class="num">
+                序號：<span></span>
+            </div>
+            <div class="ex">
+                限量虛寶序號：<span></span>
+            </div>
+        </div>
+        <div class="nextbtn">
+            <a href="<?php echo $this->act['active']==3?"javascript: close(1);":"javascript: close();"?>">
+                <img src="images/bt_3.png" width="145" height="38"/>
+            </a>
+            <a href="http://me.molome.tw/news/get/460" target="_blank" style="position: absolute; right: 5px;">
+                <img src="images/sn.png" width="139" height="34"/>
+            </a>
+        </div>
+    </div>
+
+    <!-- 任務4 -->
+    <div id="m4block" class="m4block">
+        <a href="javascript: close();">
+            <img src="images/bt_close.png" width="32" height="34" class="close"/>
+        </a>
+        <a href="javascript: checkGame(2);">
+            <img src="images/bt_next.png" width="146" height="41" style="position: absolute; bottom: 175px; left: 320px;"/>
+        </a>
+    </div>
+
+    <!-- 任務4 完成 -->
+    <div id="m4_2block">
+        <div class="m4_2block">
+            <a href="<?php echo $this->act['active']==4?"javascript: close(1);":"javascript: close();"?>">
+                <img src="images/bt_close.png" width="32" height="34" class="close"/>
+            </a>
+            <div class="num2">
+                序號：<span></span>
+            </div>            
+        </div>
+        <div class="nextbtn">
+            <a href="<?php echo $this->act['active']==4?"javascript: close(1);":"javascript: close();"?>">
+                <img src="images/bt_3.png" width="145" height="38"/>
+            </a>
+        </div>
+    </div>
+
+    <!-- 任務5 -->
+    <div id="m5block" class="m5block">
+        <a href="javascript: close();">
+            <img src="images/bt_close.png" width="32" height="34" class="close"/>
+        </a>
+        <a href="javascript: inviteFriend(5);">
+            <img src="images/bt_4.png" width="201" height="38" style="position: absolute; bottom: 65px; left: 280px;"/>
+        </a>
+    </div>
+
+    <!-- 任務5 完成 -->
+    <div id="m5_2block">
+        <div class="m5_2block">
+            <a href="<?php echo $this->act['active']==5?"javascript: close(1);":"javascript: close();"?>">
+                <img src="images/bt_close.png" width="32" height="34" class="close"/>
+            </a>
+            <div class="num">
+                序號：<span></span>
+            </div>
+            <div class="ex">
+                限量虛寶序號：<span></span>
+            </div>
+        </div>
+        <div class="nextbtn">
+            <a href="<?php echo $this->act['active']==5?"javascript: close(1);":"javascript: close();"?>">
+                <img src="images/bt_3.png" width="145" height="38"/>
+            </a>
+            <a href="http://me.molome.tw/news/get/460" target="_blank" style="position: absolute; right: 5px;">
+                <img src="images/sn.png" width="139" height="34"/>
+            </a>
+        </div>
+    </div>
+
+    <!-- 任務6 -->
+    <div id="m6block" class="m6block">
+        <a href="javascript: close();">
+            <img src="images/bt_close.png" width="32" height="34" class="close"/>
+        </a>
+        <a href="javascript: checkGame(4);">
+            <img src="images/bt_next.png" width="146" height="41" style="position: absolute; bottom: 175px; left: 320px;"/>
+        </a>
+    </div>
+
+    <!-- 任務6 完成 -->
+    <div id="m6_2block" class="m6_2block">
+        <a href="<?php echo $this->act['active']==6?"javascript: close(1);":"javascript: close();"?>">
+            <img src="images/bt_close.png" width="32" height="34" class="close"/>
+        </a>
+        <a href="javascript: lotteryForm();">
+            <img src="images/bt_2.png" width="146" height="41" style="position: absolute; bottom: 50px; left: 320px;"/>
+        </a>
+    </div>
+
+<!-- 虛寶說明1 -->
+    <div id="way1" class="way">
+        <div class="closeway" >
+            <a href="javascript: close();">
+                <img src="images/treasure_close.png" width="15" height="15" /></a>
+        </div>
+        <img src="images/treasure_01.png" width="827" height="307" class="treasure"/>
+    </div>
+
+<!-- 虛寶說明2 -->
+    <div id="way2" class="way">        
+        <div class="closeway">
+            <a href="javascript: close();"><img src="images/treasure_close.png" width="15" height="15" /></a>
+        </div>
+        <img src="images/treasure_02.png" width="827" height="307" class="treasure"/>
+    </div>
+
+<!-- 抽獎表格 -->
+    <div id="lottery" style="background-image:url(images/data_bg.png); width:604px; height:384px; position:relative;">
+        <a href="<?php echo $this->act['active']==6?"javascript: close(1);":"javascript: close();"?>">
+            <img src="images/bt_close.png" width="32" height="34" class="close4"/>
+        </a>
+        <a id="btn_reset" href="javascript: void(0);">
+            <img src="images/bt_1.png" width="146" height="41" class="bt_1"/>
+        </a>
+        <a id="btn_submit" href="javascript: void(0);">
+            <img src="images/bt_2.png" width="146" height="41" class="bt_2"/>
+        </a>
+        <label for="user_name" style="position: absolute; top: 150px; left: 45px; width: 90px; height:21px;">
+            <input type="text" id="user_name" style="position: absolute; top: 0px; left: 107px; width: 385px; height: 21px; border: none; background: none;"/>
+        </label>
+        <label for="user_email" style="position: absolute; top: 190px; left: 45px; width: 90px; height:21px;">
+            <input type="text" id="user_email" style="position: absolute; top: 0px; left: 107px; width: 385px; height: 21px; border: none; background: none;"/>
+        </label>
+        <label for="user_tel" style="position: absolute; top: 230px; left: 45px; width: 90px; height:21px;">
+            <input type="text" id="user_tel" style="position: absolute; top: 0px; left: 107px; width: 385px; height: 21px; border: none; background: none;"/>
+        </label>
+    </div>
+</div>

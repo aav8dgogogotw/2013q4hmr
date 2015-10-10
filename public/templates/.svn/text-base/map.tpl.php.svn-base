@@ -1,0 +1,236 @@
+<?php include_once("header.tpl");?>
+<?php include_once("fb.tpl");?>
+    <script>
+        init(function() {
+            var missionButton = $(".mission_button");
+            missionButton.bind("mouseover", function() {                
+                var mThis = $(this);
+                mThis.parent().find(".mission_ex").show();
+            });
+
+            missionButton.bind("mouseout", function() {
+                var mThis = $(this);
+                mThis.parent().find(".mission_ex").hide();
+            });            
+        });
+    </script>
+    <div class="map">
+        <div class="Warpper">
+            <?php include_once("logo.tpl");?>
+            <div class="mission1">
+            <?php if($this->act['active'] == 1):?>
+                <a href="javascript: checkFans();">
+            <?php else:?>
+                <a href="javascript: getAward('A');">
+            <?php endif;?>
+                    <img src="images/mission_map1.png" width="202" height="183" />
+                </a>
+                <?php if($this->act["pass"]>=1):?>
+                    <a href="javascript: getAward('A');">
+                        <img src="images/stamp.png" width="133" height="89" style="position: absolute; top: 60px; left: 30px;"/>
+                    </a>
+                <?php else:?>
+                    <a href="javascript: checkFans();">
+                        <img src="images/gem.gif" width="66" height="103" style="position: absolute; top: 35px; right: 15px;"/>
+                    </a>
+                <?php endif;?>
+            </div>
+
+            <div class="mission2">
+            <?php if($this->act['active'] == 2):?>
+                <a href="javascript: mapAction(2);">
+            <?php elseif($this->act['active'] > 2):?>
+                <a href="javascript: getAward('B');">
+            <?php else:?>
+                <a href="javascript: alert('請先完成前面的任務！');">
+            <?php endif;?>
+                    <img src="images/mission_map2<?php echo ($this->act["active"]>=2)?"":"_black";?>.png" width="220" height="106" />
+                </a>
+                <?php if($this->act["pass"]>=2):?>
+                    <a href="javascript: getAward('B');">
+                        <img src="images/stamp.png" width="133" height="89" style="position: absolute; top: -15px; left: 30px;"/>
+                    </a>
+                <?php elseif($this->act["active"] == 2):?>
+                    <a href="javascript: mapAction(2);">
+                        <img src="images/gem.gif" width="66" height="103" style="position: absolute; top: -40px; right: 0px;"/>
+                    </a>
+                <?php endif;?>
+            </div>
+
+            <div class="mission3">
+            <?php if($this->act['active'] == 3):?>
+                <a href="javascript: mapAction(3);">
+            <?php elseif($this->act['active'] > 3):?>
+                <a href="javascript: getAward('C');">
+            <?php else:?>
+                <a href="javascript: alert('請先完成前面的任務！');">
+            <?php endif;?>
+                    <img src="images/mission_map3<?php echo ($this->act["active"]>=3)?"":"_black";?>.png" width="149" height="116" />
+                </a>
+                <?php if($this->act["pass"]>=3):?>
+                    <a href="javascript: getAward('C');">
+                        <img src="images/stamp.png" width="133" height="89" style="position: absolute; top: 5px; left: -30px;"/>
+                    </a>
+                <?php elseif($this->act["active"] == 3):?>
+                    <a href="javascript: mapAction(3);">
+                        <img src="images/gem.gif" width="66" height="103" style="position: absolute; top: -25px; right: -15px;"/>
+                    </a>
+                <?php endif;?>
+            </div>
+
+            <div class="mission4">
+            <?php if($this->act['active'] == 4):?>
+                <a href="javascript: mapAction(4);">
+            <?php elseif($this->act['active'] > 4):?>
+                <a href="javascript: getAward('D');">
+            <?php else:?>
+                <a href="javascript: alert('請先完成前面的任務！');">
+            <?php endif;?>
+                    <img src="images/mission_map4<?php echo ($this->act["active"]>=4)?"":"_black";?>.png" width="172" height="140" />
+                </a>
+                <?php if($this->act["pass"]>=4):?>
+                    <a href="javascript: getAward('D');">
+                        <img src="images/stamp.png" width="133" height="89" style="position: absolute; top: 20px; left: 25px;"/>
+                    </a>
+                <?php elseif($this->act["active"] == 4):?>
+                    <a href="javascript: mapAction(4);">
+                        <img src="images/gem.gif" width="66" height="103" style="position: absolute; bottom: 10px; left: 5px;"/>
+                    </a>
+                <?php endif;?>
+            </div>
+
+            <div class="mission5">
+            <?php if($this->act['active'] == 5):?>
+                <a href="javascript: mapAction(5);">
+            <?php elseif($this->act['active'] > 5):?>
+                <a href="javascript: getAward('E');">
+            <?php else:?>
+                <a href="javascript: alert('請先完成前面的任務！');">
+            <?php endif;?>
+                    <img src="images/mission_map5<?php echo ($this->act["active"]>=5)?"":"_black";?>.png" width="172" height="140" />
+                </a>
+                <?php if($this->act["pass"]>=5):?>
+                    <a href="javascript: getAward('E');">
+                        <img src="images/stamp.png" width="133" height="89" style="position: absolute; top: 35px; left: 10px;"/>
+                    </a>
+                <?php elseif($this->act["active"] == 5):?>
+                    <a href="javascript: mapAction(5);">
+                        <img src="images/gem.gif" width="66" height="103" style="position: absolute; bottom: 5px; left: -40px;"/>
+                    </a>
+                <?php endif;?>
+            </div>
+
+            <div class="mission6">
+            <?php if($this->act['active'] == 6):?>
+                <a href="javascript: mapAction(6);">
+            <?php elseif($this->act['active'] > 6):?>
+                <a href="javascript: getAward('F');">
+            <?php else:?>
+                <a href="javascript: alert('請先完成前面的任務！');">
+            <?php endif;?>
+                    <img src="images/mission_map6<?php echo ($this->act["active"]>=6)?"":"_black";?>.png" width="233" height="140" />
+                </a>
+                <?php if($this->act["pass"]==6):?>
+                    <a href="javascript: getAward('F');">
+                        <img src="images/stamp.png" width="133" height="89" style="position: absolute; top: 25px; left: 40px;"/>
+                    </a>
+                <?php elseif($this->act["active"] == 6):?>
+                    <a href="javascript: mapAction(6);">
+                        <img src="images/gem.gif" width="66" height="103" style="position: absolute; bottom: 25px; left: 0px;"/>
+                    </a>
+                <?php endif;?>
+            </div>
+
+
+            <div class="mission1_btn">
+                <img class="mission_ex" src="images/mission_ex1.png" width="136" height="41" style="position: absolute; top: 95px; left: 25px; display:none;"/>
+            <?php if($this->act['active'] == 1):?>
+                <a href="javascript: checkFans();" class="mission_button">
+            <?php else:?>
+                <a href="javascript: getAward('A');" class="mission_button">
+            <?php endif;?>
+                    <img src="images/mission_name1.png" width="159" height="105" />
+                </a>
+            </div>
+            <div class="mission2_btn">
+                <img class="mission_ex" src="images/mission_ex2.png" width="99" height="31" style="position: absolute; top: 90px; left: 40px; display:none;"/>
+            <?php if($this->act['active'] == 2):?>
+                <a href="javascript: mapAction(2);" class="mission_button">
+            <?php elseif($this->act['active'] > 2):?>
+                <a href="javascript: getAward('B');" class="mission_button">
+            <?php else:?>
+                <a href="javascript: alert('請先完成前面的任務！');" class="mission_button">
+            <?php endif;?>
+                    <img src="images/mission_name2.png" width="159" height="105" />
+                </a>
+            </div>
+
+            <div class="mission3_btn">
+                <img class="mission_ex" src="images/mission_ex3.png" width="136" height="30" style="position: absolute; top: 95px; left: 30px; display:none;"/>
+            <?php if($this->act['active'] == 3):?>
+                <a href="javascript: mapAction(3);" class="mission_button">
+            <?php elseif($this->act['active'] > 3):?>
+                <a href="javascript: getAward('C');" class="mission_button">
+            <?php else:?>
+                <a href="javascript: alert('請先完成前面的任務！');" class="mission_button">
+            <?php endif;?>
+                    <img src="images/mission_name3.png" width="182" height="105" />
+                </a>
+            </div>
+
+            <div class="mission4_btn">
+                <img class="mission_ex" src="images/mission_ex4.png" width="136" height="56" style="position: absolute; top: 95px; left: 35px; display:none;"/>
+            <?php if($this->act['active'] == 4):?>
+                <a href="javascript: mapAction(4);" class="mission_button">
+            <?php elseif($this->act['active'] > 4):?>
+                <a href="javascript: getAward('D');" class="mission_button">
+            <?php else:?>
+                <a href="javascript: alert('請先完成前面的任務！');" class="mission_button">
+            <?php endif;?>
+                    <img src="images/mission_name4.png" width="191" height="105" />
+                </a>
+            </div>
+
+            <div class="mission5_btn">
+                <img class="mission_ex" src="images/mission_ex5.png" width="136" height="30" style="position: absolute; top: 100px; left: 30px; display:none;"/>
+            <?php if($this->act['active'] == 5):?>
+                <a href="javascript: mapAction(5);" class="mission_button">
+            <?php elseif($this->act['active'] > 5):?>
+                <a href="javascript: getAward('E');" class="mission_button">
+            <?php else:?>
+                <a href="javascript: alert('請先完成前面的任務！');" class="mission_button">
+            <?php endif;?>
+                    <img src="images/mission_name5.png" width="170" height="119" />
+                </a>
+            </div>
+
+            <div class="mission6_btn">
+            <?php if($this->act['active'] == 6):?>
+                <a href="javascript: mapAction(6);" class="mission_button">
+            <?php elseif($this->act['active'] > 6):?>
+                <a href="javascript: getAward('F');" class="mission_button">
+            <?php else:?>
+                <a href="javascript: alert('請先完成前面的任務！');" class="mission_button">
+            <?php endif;?>
+                    <img src="images/mission_name6.png" width="184" height="105" />
+                </a>
+            </div>
+
+
+            <div class="yellowball">
+                <a href="javascript: tipShow(1);">
+                    <img src="images/bt_yellow.png" width="121" height="121" />
+                </a>
+            </div>
+
+            <div class="yellowball2">
+                <a href="javascript: tipShow(2);">
+                    <img src="images/bt_yellow.png" width="121" height="121" />
+                </a>
+            </div>
+            <?php include_once("button.tpl");?>            
+        </div>
+    </div>
+<?php include_once("mission.tpl");?>
+<?php include_once("show.tpl");?>
+<?php include_once("footer.tpl");?>

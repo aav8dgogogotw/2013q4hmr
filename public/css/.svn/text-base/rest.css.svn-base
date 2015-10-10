@@ -1,0 +1,100 @@
+@charset "utf-8";
+/* CSS Document */
+
+#bg{
+	margin:0px;
+	background-image:url(../images/bg.jpg);
+	background-position:top center;]
+	}
+	
+img{border:0px;}
+
+.Warpper{width:960px;margin:auto; position:relative;}
+
+.logo{position:absolute; top:25px;}
+
+.menu{position:absolute; top:625px; left:130px;}
+.marl{margin-left:250px;}
+
+
+.index{background-image:url(../images/cover.png); background-position:top center; min-height:716px; min-width:947px; background-repeat:no-repeat;}
+.map{min-width:947px; min-height:716px; background-image:url(../images/map_bg.png); background-position:top center; background-repeat:no-repeat; margin:auto;}
+
+.copyright{margin:auto; margin-top:20px; display:block;}
+
+.yellowball{position:absolute; top:320px; left:370px;}
+.yellowball2{position:absolute; top:60px; right:150px;}
+
+.mission1{position:absolute; top:325px; left:120px;}
+.mission2{position:absolute; top:139px; left:200px;}
+.mission3{position:absolute; top:400px; left:320px;}
+.mission4{position:absolute; top:312px; left:462px;}
+.mission5{position:absolute; top:95px; left:572px;}
+.mission6{position:absolute; top:335px; left:670px;}
+
+
+.mission1_btn{position:absolute; top:465px; left:130px;}
+.mission2_btn{position:absolute; top:190px; left:225px;}
+.mission3_btn{position:absolute; top:460px; left:310px;}
+.mission4_btn{position:absolute; top:412px; left:475px;}
+.mission5_btn{position:absolute; top:195px; left:572px;}
+.mission6_btn{position:absolute; top:425px; left:670px;}
+
+
+.way{background-image:url(../images/sss.png); padding:10px 0px 10px 0px;}
+.treasure{display:block; margin:auto; margin-top:-15px;}
+
+.closeway{width:827px; margin:auto; text-align:right; z-index:5;}
+.close{position:absolute; top:40px; right:15px;}
+.close2{position:absolute; top:100px; right:13px;}
+.close3{position:absolute; top:65px; right:17px;}
+.close4{position:absolute; top:53px; right:17px;}
+
+.bt_1{position:absolute; top:310px; right:310px;}
+.bt_2{position:absolute; top:310px; right:154px;}
+
+
+.nextbtn{width:605px; text-align:center;}
+
+.num{font-size:17px; text-align:right; position:absolute; top:280px; right:110px; font-weight:bold; color:#900;}
+.num2{font-size:17px; text-align:right; position:absolute; top:270px; right:110px; font-weight:bold; color:#900;}
+
+.ex{font-size:17px; text-align:right; position:absolute; top:310px; right:50px; font-weight:bold; color:#900; display:none;}
+
+.m1block{background-image:url(../images/mission1_1.png); width:605px; height:382px; position:relative;}
+.m1_2block{background-image:url(../images/mission1_2.png); width:605px; height:382px; position:relative;}
+
+.m2block{background-image:url(../images/mission2_1.png); width:605px; height:382px; position:relative;}
+.m2_2block{background-image:url(../images/mission2_2.png); width:605px; height:382px; position:relative;}
+
+.m3block{background-image:url(../images/mission3_1.png); width:605px; height:382px; position:relative;}
+.m3_2block{background-image:url(../images/mission3_2.png); width:605px; height:382px; position:relative;}
+
+.m4block{background-image:url(../images/mission4_1.png); width:605px; height:484px; position:relative;}
+.m4_2block{background-image:url(../images/mission4_2.png); width:605px; height:488px; position:relative;}
+
+.m5block{background-image:url(../images/mission5_1.png); width:605px; height:382px; position:relative;}
+.m5_2block{background-image:url(../images/mission5_2.png); width:605px; height:382px; position:relative;}
+
+.m6block{background-image:url(../images/mission6_1.png); width:605px; height:484px; position:relative;}
+.m6_2block{background-image:url(../images/mission6_2.png); width:605px; height:382px; position:relative;}
+
+#view{position: fixed; top: 0px; left: 0px; width: 100%; height: 100%;}
+#black{position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; background: #000; opacity: 0.8;}
+#intro
+{
+    position: relative; 
+    top: 150px; 
+    margin: auto; 
+    width: 697px; 
+    height: 482px; 
+    background: url("../images/intro.png") no-repeat;
+    z-index: 10;
+}
+#introimg{margin: auto;}
+.gif{position:absolute; top: 260px; left: 90px;}
+
+
+
+
+

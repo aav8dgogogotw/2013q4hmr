@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/maritimeera/!svn/ver/15/trunk/public/admin/action/award
+END
+list.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/maritimeera/!svn/ver/52/trunk/public/admin/action/award/list.php
+END
+show.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/maritimeera/!svn/ver/15/trunk/public/admin/action/award/show.php
+END
+update.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/maritimeera/!svn/ver/15/trunk/public/admin/action/award/update.php
+END
+edit.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/maritimeera/!svn/ver/15/trunk/public/admin/action/award/edit.php
+END

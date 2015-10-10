@@ -1,0 +1,257 @@
+@charset "utf-8";
+/* CSS Document */
+html,body{margin:0;}
+body{font-size:63%; font-family:Arial,Verdana,MingLiu,sans-serif;color:#73471a;line-height:1.6;background-color:#fff;}
+a:focus{outline:0;}
+a{text-decoration:none;}
+a:hover{text-decoration:underline;}
+img{border: 0 none; line-height:0;}
+.Clear{clear:both;}
+form {margin:0; padding:0;}
+dl, dt, dd {margin: 0;padding: 0;}
+dl {height: 1%;}
+ul,ul li{ margin:0;padding:0;list-style:none;}
+.clearfix:before,.clearfix:after {content: "";display: block;height: 0;overflow: hidden;}
+button{border:0 none; cursor:pointer;padding: 0;margin: 0;background: transparent;}
+.clearfix:after {clear: both;}
+.clearfix { zoom: 1;}
+
+
+
+.Text{ width:200px; padding:2px; color:#73471a;}
+.Text02{ width:50px; }
+.Select{padding:2px; color:#73471a; vertical-align: top;}
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input,
+select {
+    background-color: #ffffff;
+    border: 2px solid #59493f;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+    transition: border linear 0.2s, box-shadow linear 0.2s;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus,
+select:focus {
+    border-color: rgba(82, 168, 236, 0.8);
+    outline: 0;
+    outline: thin dotted \9;
+  /* IE6-9 */
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+}
+
+.DiaBox {left:50%;top:10%;  position: absolute;z-index:120; font-size:1.3em;  margin:0 0 0 -400px;}
+.ButClose{  background: url(../images/BtnClose.png) no-repeat;  width: 32px;    height: 26px;   display: block; text-indent: -99999px;  position: absolute; top: -26px;right: 30px;}
+.DiaCont{ position: relative;}
+#Fail {background: url(../images/fail.png) no-repeat; width: 800px; height: 505px;}
+#Fail .ButClose{right: 120px;}
+#Fail .Number{position: absolute;font-weight: bold;font-size: 18px;top: 280px;left: 240px;}
+#Success{background: url(../images/success.png) no-repeat; width: 710px; height: 505px;}
+.LinkAgain a{position: absolute; display: block; text-indent: -99999px; width: 195px; height: 75px;top: 346px;right: 206px;}
+#Fill{background: url(../images/fillinfor.png) no-repeat; width: 680px; height: 520px; color: #fff; padding: 50px; font-size: 13px;}
+#Fill .ButClose{right: 180px; top: -11px;}
+
+
+.mission1{position:absolute; top:325px; left:120px;}
+.mission2{position:absolute; top:139px; left:200px;}
+.mission3{position:absolute; top:400px; left:320px;}
+.mission4{position:absolute; top:312px; left:462px;}
+.mission5{position:absolute; top:95px; left:572px;}
+.mission6{position:absolute; top:335px; left:670px;}
+
+
+.mission1_btn{position:absolute; top:20px; left:-50px;}
+.mission2_btn{position:absolute; top:20px; left:110px;}
+.mission3_btn{position:absolute; top:20px; left:270px;}
+.mission4_btn{position:absolute; top:20px; left:450px;}
+.mission5_btn{position:absolute; top:20px; left:640px;}
+
+
+.way{background-image:url(../images/sss.png); padding:10px 0px 10px 0px;}
+.treasure{display:block; margin:auto; margin-top:-15px;}
+
+.closeway{width:827px; margin:auto; text-align:right; z-index:5;}
+.close{position:absolute; top:40px; right:15px;}
+.close2{position:absolute; top:100px; right:13px;}
+.close3{position:absolute; top:65px; right:17px;}
+
+
+
+.nextbtn{width:605px; text-align:center;}
+
+.num{font-size:17px; text-align:right; position:absolute; top:280px; right:110px; font-weight:bold; color:#900;}
+.num2{font-size:17px; text-align:right; position:absolute; top:270px; right:110px; font-weight:bold; color:#900;}
+
+.ex{font-size:17px; text-align:right; position:absolute; top:310px; right:50px; font-weight:bold; color:#900; display:none;}
+
+.m1block{background-color:#FFFFFF; left:160px; width:400px; height:300px; position:relative;}
+.m1_2block{background-color:#FFFFFF; width:605px; height:450px; position:relative;}
+
+.formblock{background-color:#FFFFFF; width:605px; height:600px; position:relative;}
+
+.m2block{background-color:#FFFFFF; width:605px; height:450px; position:relative;}
+.m2_2block{background-color:#FFFFFF; width:605px; height:450px; position:relative;}
+
+.m3block{background-color:#FFFFFF; width:605px; height:450px; position:relative;}
+.m3_2block{background-color:#FFFFFF; width:605px; height:450px; position:relative;}
+
+.m4block{background-image:url(../images/mission4_1.png); width:605px; height:484px; position:relative;}
+.m4_2block{background-image:url(../images/mission4_2.png); width:605px; height:488px; position:relative;}
+
+.m5block{background-image:url(../images/mission5_1.png); width:605px; height:382px; position:relative;}
+.m5_2block{background-image:url(../images/mission5_2.png); width:605px; height:382px; position:relative;}
+
+.m6block{background-image:url(../images/mission6_1.png); width:605px; height:484px; position:relative;}
+.m6_2block{background-image:url(../images/mission6_2.png); width:605px; height:382px; position:relative;}
+
+#view{position: fixed; top: 0px; left: 0px; width: 100%; height: 100%;}
+#intro
+{
+    position: relative; 
+    top: 150px; 
+    margin: auto; 
+    width: 800px; 
+    height: 600px; 
+    background: url("../images/intro.png") no-repeat;
+    z-index: 10;
+}
+/*** 表單處理CSS ***/
+.close4{width: 32px;    height: 26px;   display: block; text-indent: -99999px;  position: absolute; top: -27px;left: 540px;}
+#require_error{position: absolute; top: 420px; left: 180px; width: 200px; height: 21px; border: none;}
+
+/*** GLOBE ***/
+.Warpper{width:990px;   margin:auto;}
+#Header{height: 87px;position: absolute;left: 50%;margin: 0 0 0 -468px; z-index: 10;}
+#Header .Warpper{position:relative;}
+#Header h1{margin:28px 0 0 20px;padding:0; float: left}
+#Header h1 a{   background:url(../images/Logo.png) no-repeat;width:67px;height:44px;display:block;  text-indent:-99999px;}
+.NavBlock{ float: left; margin: 28px 0 0 83px;}
+.Navigation{height:41px;}
+.Navigation li{ float:left; position: relative;}
+.Navigation li a{background:url(../images/Nav.png) no-repeat;text-indent:-99999px;display:block;height: 41px; }
+.Navigation li.Nav01{ width:100px;}
+.Navigation li.Nav01 a{width:100px;background-position:0 0;}
+.Navigation li.Nav01 a:hover{background-position:0 -41px;}
+.Navigation li.Nav01 a.Active{background-position:0 -41px41px;}
+.Navigation li.Nav02{ width:103px;}
+.Navigation li.Nav02 a{width:103px;background-position:-100px 0;}
+.Navigation li.Nav02 a:hover{background-position:-100px -41px;}
+.Navigation li.Nav02 a.Active{background-position:-100px -41px;}
+.Navigation li.Nav03{ width:170px;}
+.Navigation li.Nav03 a{width:170px;background-position:-203px 0;}
+.Navigation li.Nav03 a:hover{background-position:-203px -41px;}
+.Navigation li.Nav03 a.Active{background-position:-203px -41px;}
+.Navigation li.Nav04{ width:177px;}
+.Navigation li.Nav04 a{width:177px;background-position:-373px 0;}
+.Navigation li.Nav04 a:hover{background-position:-373px -41px;}
+.Navigation li.Nav04 a.Active{background-position:-373px -41px;}
+.Navigation li.Nav05{ width:133px;}
+.Navigation li.Nav05 a{width:133px;background-position:-550px 0;}
+.Navigation li.Nav05 a:hover{background-position:-550px -41px;}
+.Navigation li.Nav05 a.Active{background-position:-550px -41px;}
+
+.LikeBlock{ margin:9px 0 0 12px; }
+.ActivityBlock .Warpper{ background: url(../images/activity.png) no-repeat; min-height: 1570px;}
+.PrivacyBlock .Warpper{ background: url(../images/Privacy.png) no-repeat; min-height: 1700px;}
+
+.RecipeBlock .Warpper{ background: url(../images/recipe.png) no-repeat; min-height: 1370px; position: relative;}
+.HomeBlock .Warpper{ position: relative;}
+.Flash .Warpper{ position: relative; top: 70px;}
+.LinkGo{display: block; width: 195px; height: 60px; text-indent: -99999px; position: absolute;bottom: 65px;right: 87px;cursor: pointer; background:url(../images/alpha.gif) repeat;}
+.LinkVideo{ display: block; width: 238px; height: 157px; text-indent: -99999px; position: absolute;top: 212px;right: 170px;cursor: pointer; background:url(../images/alpha.gif) repeat;}
+.ShareFb{background: url(../images/ShareFb.png) no-repeat; display: block; width: 140px; height: 50px; text-indent: -99999px; position: absolute;top: 367px;right: 44px;cursor: pointer;}
+.LinkPlay{background: url(../images/LinkPlay.png) no-repeat; display: block; width: 208px; height: 80px; text-indent: -99999px; position: absolute;bottom: 25px;right:210px;}
+#Footer{ background:url(../images/BgFooter.png) repeat-x; height: 22px; color: #c2bebc; text-align: center; padding-top: 8px;position: relative;margin-top: -22px;}
+.Copyright{ color: #9e9692; font-size: 1em;}
+.Copyright a{ color: #ff7e7e;}
+.Content{ background-color: #fdfbe5;}
+.NormalForm { text-align: left;}
+.NormalForm ul li { margin:2px 0;}
+.NormalForm ul li .ItemHead{ width: 150px;  float: left; text-align: right; font-weight: bold; margin:3px 0 0 ; }
+.NormalForm ul li .ItemBox{  margin-left: 155px;}
+.BtnReset{ background:url(../images/BtnReset.png) no-repeat; display:block; text-indent:-99999px; width:160px; height:85px; float:left; margin:-15px 0 0 100px;}
+.BtnSubmit{ background:url(../images/BtnSubmit.png) no-repeat; display:block; text-indent:-99999px; width:160px; height:85px; float:left;margin:-15px 0 0 0;}
+
+.TabBlock { width: 850px; margin:0 auto; padding:90px 0 0;}
+.TabBlock ul{ height:43px; position: relative; border-bottom: 1px solid #eb6100;}
+.TabBlock ul li{ position: absolute;height: 43px;}
+.TabBlock ul li a{  text-indent:-99999px;display:block;height: 43px; }
+.TabBlock ul li a.Active{}
+
+.TabBlock ul li.Tab01{ left: 0; z-index: 5;}
+.TabBlock ul li.Tab01 a{ width: 163px;background:url(../images/Tab01.png) 0 0;}
+.TabBlock ul li.Tab01 a:hover{  background-position:0 -50px;}
+.TabBlock ul li.Tab01 a.Active{background-position:0 -50px;}
+
+.TabBlock ul li.Tab02{ left: 158px;z-index: 4;}
+.TabBlock ul li.Tab02 a{ width: 223px;background:url(../images/Tab02.png) 0 0;}
+.TabBlock ul li.Tab02 a:hover{  background-position:0 -50px;}
+.TabBlock ul li.Tab02 a.Active{background-position:0 -50px;}
+
+.TabBlock ul li.Tab03{ left: 374px;z-index: 3;}
+.TabBlock ul li.Tab03 a{ width: 172px;background:url(../images/Tab03.png) 0 0;}
+.TabBlock ul li.Tab03 a:hover{  background-position:0 -50px;}
+.TabBlock ul li.Tab03 a.Active{background-position:0 -50px;}
+
+.TabBlock ul li.Tab04{ left: 539px;z-index: 2;}
+.TabBlock ul li.Tab04 a{ width: 181px;background:url(../images/Tab04.png) 0 0;}
+.TabBlock ul li.Tab04 a:hover{  background-position:0 -50px;}
+.TabBlock ul li.Tab04 a.Active{background-position:0 -50px;}
+
+.TabBlock ul li.Tab05{ left: 714px;z-index: 1;}
+.TabBlock ul li.Tab05 a{ width: 137px;background:url(../images/Tab05.png) 0 0;}
+.TabBlock ul li.Tab05 a:hover{  background-position:0 -50px;}
+.TabBlock ul li.Tab05 a.Active{background-position:0 -50px;}
+
+.RecipeBox{ position: relative; margin-top: 840px;}
+.LinkGoRecipe{display: block;width: 990px;text-indent: -99999px;position: absolute;left: 0;cursor: pointer;background:url(../images/alpha.gif) repeat;}
+
+.Recipe01Block .Warpper{ background: url(../images/recipe01.png) no-repeat; min-height: 1370px; position: relative;}
+.Recipe01Block .LinkGoRecipe{height: 865px;top: -840px;}
+.Recipe02Block .Warpper{ background: url(../images/recipe02.png) no-repeat; min-height: 1370px; position: relative;}
+.Recipe02Block .RecipeBox{ margin-top: 1081px;}
+.Recipe02Block .LinkGoRecipe{height: 1105px; top: -1081px;}
+.Recipe03Block .Warpper{ background: url(../images/recipe03.png) no-repeat; min-height: 1370px; position: relative;}
+.Recipe03Block .RecipeBox{ margin-top: 774px;}
+.Recipe03Block .LinkGoRecipe{height: 817px; top: -774px;}
+.Recipe04Block .Warpper{ background: url(../images/recipe04.png) no-repeat; min-height: 1370px; position: relative;}
+.Recipe04Block .RecipeBox{ margin-top: 1081px;}
+.Recipe04Block .LinkGoRecipe{height: 1085px;top: -1081px;}
+.Recipe05Block .Warpper{ background: url(../images/recipe05.png) no-repeat; min-height: 1370px; position: relative;}
+.Recipe05Block .RecipeBox{ margin-top: 1081px;}
+.Recipe05Block .LinkGoRecipe{height: 1085px;top: -1081px;}

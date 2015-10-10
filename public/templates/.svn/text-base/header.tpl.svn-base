@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+    <meta name="google" value="notranslate" />
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta property="og:site_name" content=""/>
+    <meta property="og:title" content="" /> 
+    <meta property="og:description" content="" /> 
+    <meta property="og:image" content="" />
+    <title><?php echo $this->title?></title>
+    <link rel="shortcut icon" href="images/icon.png">
+    <link href="css/rest.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="https://connect.facebook.net/zh_TW/all.js"></script>
+    <script type="text/javascript" src="https://static.ak.fbcdn.net/connect.php/js/FB.Share"></script>
+    <script type="text/javascript" src="js/jquery/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery/plugins/jquery.blockUI.min.js"></script>
+    <script type="text/javascript" src="js/action/FbLogin.js?v=<?php echo md5(date("YmdHis"));?>"></script>
+    <script type="text/javascript" src="js/action/main.js?v=<?php echo md5(date("YmdHis"));?>"></script>
+    <style>
+    </style>
+  </head>
+  <body id="bg" onload="MM_preloadImages('images/menu01.png','images/menu02.png','images/menu03.png','images/menu04.png')">    

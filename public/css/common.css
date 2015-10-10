@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+img  {border: none;}
+table {border-collapse: collapse;}
+table td,table th {padding: 2px 5px;}
+
+.float-left {float: left;} 
+.float-right {float: right;} 
+.clear {clear: both;}
+.right {text-align: right !important;}  
+.center {text-align: center !important;}  
+.top {vertical-align: top !important;}  
+.middle {vertical-align: middle !important;}   
+.bottom {vertical-align: bottom !important;} 
+.hide {display: none;}
+
+ui.error li {color:#ff0000;}
+p.error {color:#ff0000;}
+input.large-button  {width: 200px; height: 30px;}
+
+body {padding: 10px;}
+h1 {margin-bottom: 20px; font-size: large; background-color: #505050; color: white; padding: 5px;}
+h2 {margin: 20px; font-size: medium; background-color: #f0f0f0; color: white; padding: 5px;} 
+h3 {margin: 20px; font-size: small; border-bottom: 1px solid gray;}  
+
+div.block {margin: 10px 0;}
+
+a.profile {line-height: 24px;}
+a.profile img{line-height: 24px; vertical-align: middle; margin-right: 5px;}
+div#dialog {border: 1px solid gray; background-color: #f0f0f0; padding: 5px;}

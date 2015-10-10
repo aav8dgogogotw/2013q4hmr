@@ -1,0 +1,166 @@
+2013-11-07 09:29:25 addYoutudeClickLog (PDOException) > PDOException Object
+(
+    [message:protected] => SQLSTATE[42S22]: Column not found: 1054 Unknown column 'youtude_share' in 'field list'
+    [string:private] => 
+    [code:protected] => 42S22
+    [file:protected] => C:\workspace\2013q4hmr\library\Table\LogClick.class.php
+    [line:protected] => 303
+    [trace:private] => Array
+        (
+            [0] => Array
+                (
+                    [file] => C:\workspace\2013q4hmr\library\Table\LogClick.class.php
+                    [line] => 303
+                    [function] => execute
+                    [class] => PDOStatement
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [file] => C:\workspace\2013q4hmr\public\api\log_click.php
+                    [line] => 65
+                    [function] => addYoutudeClickLog
+                    [class] => LogClick
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [file] => C:\workspace\2013q4hmr\public\api\active.php
+                    [line] => 110
+                    [function] => resourcePost
+                    [args] => Array
+                        (
+                            [0] => Api Object
+                                (
+                                    [response:private] => JSON
+                                    [output:private] => Array
+                                        (
+                                            [message] => OK
+                                            [detail] => initialize
+                                        )
+
+                                    [flag:private] => 1
+                                )
+
+                            [1] => Tools Object
+                                (
+                                )
+
+                            [2] => Array
+                                (
+                                    [action] => logClick
+                                    [method] => post
+                                    [ip] => 127.0.0.1
+                                    [today] => 2013-11-07
+                                    [now] => 2013-11-07 09:29:25
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [errorInfo] => Array
+        (
+            [0] => 42S22
+            [1] => 1054
+            [2] => Unknown column 'youtude_share' in 'field list'
+        )
+
+)
+
+
+2013-11-07 09:29:49 addYoutudeClickLog (PDOException) > PDOException Object
+(
+    [message:protected] => SQLSTATE[42S22]: Column not found: 1054 Unknown column 'youtude_share' in 'field list'
+    [string:private] => 
+    [code:protected] => 42S22
+    [file:protected] => C:\workspace\2013q4hmr\library\Table\LogClick.class.php
+    [line:protected] => 303
+    [trace:private] => Array
+        (
+            [0] => Array
+                (
+                    [file] => C:\workspace\2013q4hmr\library\Table\LogClick.class.php
+                    [line] => 303
+                    [function] => execute
+                    [class] => PDOStatement
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [file] => C:\workspace\2013q4hmr\public\api\log_click.php
+                    [line] => 65
+                    [function] => addYoutudeClickLog
+                    [class] => LogClick
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [file] => C:\workspace\2013q4hmr\public\api\active.php
+                    [line] => 110
+                    [function] => resourcePost
+                    [args] => Array
+                        (
+                            [0] => Api Object
+                                (
+                                    [response:private] => JSON
+                                    [output:private] => Array
+                                        (
+                                            [message] => OK
+                                            [detail] => initialize
+                                        )
+
+                                    [flag:private] => 1
+                                )
+
+                            [1] => Tools Object
+                                (
+                                )
+
+                            [2] => Array
+                                (
+                                    [action] => logClick
+                                    [method] => post
+                                    [ip] => 127.0.0.1
+                                    [today] => 2013-11-07
+                                    [now] => 2013-11-07 09:29:49
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [errorInfo] => Array
+        (
+            [0] => 42S22
+            [1] => 1054
+            [2] => Unknown column 'youtude_share' in 'field list'
+        )
+
+)
+
+

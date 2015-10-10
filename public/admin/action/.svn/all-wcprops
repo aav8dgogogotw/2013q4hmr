@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/maritimeera/!svn/ver/11/trunk/public/admin/action
+END
+welcome.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/maritimeera/!svn/ver/15/trunk/public/admin/action/welcome.php
+END
+logList.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/maritimeera/!svn/ver/15/trunk/public/admin/action/logList.php
+END
+award.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/maritimeera/!svn/ver/15/trunk/public/admin/action/award.php
+END
+user.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/maritimeera/!svn/ver/15/trunk/public/admin/action/user.php
+END
+login_off.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/maritimeera/!svn/ver/15/trunk/public/admin/action/login_off.php
+END
+login_check.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/maritimeera/!svn/ver/15/trunk/public/admin/action/login_check.php
+END
+login.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/maritimeera/!svn/ver/15/trunk/public/admin/action/login.php
+END

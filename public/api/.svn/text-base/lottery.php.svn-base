@@ -1,0 +1,46 @@
+<?php
+    function resourcePost($api, $tools, $param) {
+
+        $param["fbId"] = $tools->sql_injection_anti($_SESSION['fbId']);
+        $param["name"] = $tools->sql_injection_anti($_POST['name']);
+        $param["email"] = $tools->sql_injection_anti($_POST['email']);
+        $param["tel"] = $tools->sql_injection_anti($_POST['tel']);
+
+        if($param["fbId"] == "" or 
+            $param["name"] == "" or 
+            $param["email"] == "" or
+            $param["tel"] == "") {
+            $api->setError("資料不齊全，請重新輸入。");
+            return;
+        }
+
+        include_once "../../library/Table/User.class.php";
+        $user = new User();        
+
+        $userData = $user->getByFbId($param['fbId']);
+
+        if(empty($userData)) {
+            $api->setError("查無玩家資料！");
+            return;
+        }else {
+            if($userData['act1'] == 0 || 
+                $userData['act2'] == 0 || 
+                $userData['act3'] == 0 ||
+                $userData['act4'] == 0 ||
+                $userData['act5'] == 0 ||
+                $userData['act6'] == 0) {
+
+                $api->setError("您尚未完成所有任務！");
+                return;
+            }
+            include_once "../../library/Table/Lottery.class.php";
+            $lottery = new Lottery();
+            $lottery->add($param);
+
+            $api->setOutput('新增資料成功');
+            unset($lottery);            
+        }
+        unset($param, $usesrData, $user);
+        return;
+    }
+?>

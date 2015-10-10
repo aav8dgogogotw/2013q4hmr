@@ -1,0 +1,581 @@
+<?php
+
+/**
+ * Base Database
+ * PDO 連結 Database 的基本設定
+ */
+include_once (LIB_PATH . "Table/BaseDB.class.php");
+
+/**
+ * 分享至塗鴉牆人數 LOG記錄資料表
+ *
+ * @package Hiiir\Table\LogClick
+ * @author Hugo Wang <hugo_wang@hiiir.com>
+ * @version 1.0
+ */
+class LogClick extends BaseDB 
+{    
+    /**
+     * @var string 資料表名稱
+     * @access protected
+     */
+    protected $_name = "log_click";
+
+    function __construct() 
+    {
+        
+    }
+
+    /**
+     * LOG 列表
+     * 
+     * @param string 略過筆數
+     * @param string 取出筆數
+     * @return array
+     * @access public
+     */
+    public function listClickLog($offset = 0, $limit = 5000) 
+    {
+        if (!is_object($this->pdo))
+            $this->connect($DBConfig["Master"]);
+
+        try {
+            $query = "SELECT * FROM $this->_name ORDER BY `log_date` DESC LIMIT :offset, :limit";
+            $stmt = $this->pdo->prepare($query);
+
+            $stmt->bindValue(":offset", $offset, PDO::PARAM_INT);
+            $stmt->bindValue(":limit", $limit, PDO::PARAM_INT);
+            $res = $stmt->execute();
+
+            if ($res === true) {
+                $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+            } else {
+                
+                // log it
+                parent::logResError($this->_name, "listClickLog", $res);
+                return false;
+            }
+        } catch (PDOException $e) {
+
+            // log it
+            parent::logPDOError($this->_name, "listClickLog", $e);
+            return false;
+        }
+        return $result;
+    }
+
+    /**
+     * Count Total
+     * 
+     * @return int
+     * @access public
+     */
+    public function countClickLog() 
+    {
+        if (!is_object($this->pdo))
+            $this->connect($DBConfig["Master"]);
+
+        try {
+            $query = "SELECT COUNT(*) AS `Counts` FROM $this->_name LIMIT 1";
+            $stmt = $this->pdo->prepare($query);
+            $res = $stmt->execute();
+
+            if ($res === true) {
+                $result = $stmt->fetch(PDO::FETCH_ASSOC);
+            } else {
+                
+                // log it
+                parent::logResError($this->_name, "listClickLog", $res);
+                return false;
+            }
+        } catch (PDOException $e) {
+
+            // log it
+            parent::logPDOError($this->_name, "listClickLog", $e);
+            return false;
+        }
+        return $result['Counts'];
+    }
+
+    /**
+     * 新增 活動首頁 LOG
+     * 
+     * @return int
+     * @access public
+     */
+    public function addIndexClickLog() 
+    {
+        $today = date("Y-m-d");
+
+        if (!is_object($this->pdo))
+            $this->connect($DBConfig["Master"]);
+
+        try {
+            $query = "INSERT INTO $this->_name (`log_date`, `index_click`) VALUES (:today, 1) 
+                      ON DUPLICATE KEY UPDATE `index_click` = `index_click` + 1 ";
+            $stmt = $this->pdo->prepare($query);
+            $stmt->bindParam(":today", $today);
+            $res = $stmt->execute();
+
+            if ($res === true) {
+                $result = $stmt->rowCount();
+            } else {
+                
+                // log it
+                parent::logResError($this->_name, "addIndexClickLog", $res);
+                return false;
+            }
+        } catch (PDOException $e) {
+
+            // log it
+            parent::logPDOError($this->_name, "addIndexClickLog", $e);
+            return false;
+        }
+        return $result;
+    }
+
+    /**
+     * 新增 遊戲介紹頁 LOG
+     * 
+     * @return int
+     * @access public
+     */
+    public function addIntroClickLog() 
+    {
+        $today = date("Y-m-d");
+
+        if (!is_object($this->pdo))
+            $this->connect($DBConfig["Master"]);
+
+        try {
+            $query = "INSERT INTO $this->_name (`log_date`, `intro_click`) VALUES (:today, 1) 
+                      ON DUPLICATE KEY UPDATE `intro_click` = `intro_click` + 1 ";
+            $stmt = $this->pdo->prepare($query);
+            $stmt->bindParam(":today", $today);
+            $res = $stmt->execute();
+
+            if ($res === true) {
+                $result = $stmt->rowCount();
+            } else {
+                
+                // log it
+                parent::logResError($this->_name, "addIntroClickLog", $res);
+                return false;
+            }
+        } catch (PDOException $e) {
+
+            // log it
+            parent::logPDOError($this->_name, "addIntroClickLog", $e);
+            return false;
+        }
+        return $result;
+    }
+
+    /**
+     * 新增 活動辦法頁 LOG
+     * 
+     * @return int
+     * @access public
+     */
+    public function addActiveClickLog() 
+    {
+        $today = date("Y-m-d");
+
+        if (!is_object($this->pdo))
+            $this->connect($DBConfig["Master"]);
+
+        try {
+            $query = "INSERT INTO $this->_name (`log_date`, `active_click`) VALUES (:today, 1) 
+                      ON DUPLICATE KEY UPDATE `active_click` = `active_click` + 1 ";
+            $stmt = $this->pdo->prepare($query);
+            $stmt->bindParam(":today", $today);
+            $res = $stmt->execute();
+
+            if ($res === true) {
+                $result = $stmt->rowCount();
+            } else {
+                
+                // log it
+                parent::logResError($this->_name, "addActiveClickLog", $res);
+                return false;
+            }
+        } catch (PDOException $e) {
+
+            // log it
+            parent::logPDOError($this->_name, "addActiveClickLog", $e);
+            return false;
+        }
+        return $result;
+    }
+
+    /**
+     * 新增 得獎名單頁 LOG
+     * 
+     * @return int
+     * @access public
+     */
+    public function addAwardClickLog() 
+    {
+        $today = date("Y-m-d");
+
+        if (!is_object($this->pdo))
+            $this->connect($DBConfig["Master"]);
+
+        try {
+            $query = "INSERT INTO $this->_name (`log_date`, `award_click`) VALUES (:today, 1) 
+                      ON DUPLICATE KEY UPDATE `award_click` = `award_click` + 1 ";
+            $stmt = $this->pdo->prepare($query);
+            $stmt->bindParam(":today", $today);
+            $res = $stmt->execute();
+
+            if ($res === true) {
+                $result = $stmt->rowCount();
+            } else {
+                
+                // log it
+                parent::logResError($this->_name, "addAwardClickLog", $res);
+                return false;
+            }
+        } catch (PDOException $e) {
+
+            // log it
+            parent::logPDOError($this->_name, "addAwardClickLog", $e);
+            return false;
+        }
+        return $result;
+    }
+
+    /**
+     * 新增 FACEBOOK分享 LOG
+     * 
+     * @return int
+     * @access public
+     */
+    public function addFacebookShareLog() 
+    {
+        $today = date("Y-m-d");
+
+        if (!is_object($this->pdo))
+            $this->connect($DBConfig["Master"]);
+
+        try {
+            $query = "INSERT INTO $this->_name (`log_date`, `facebook_share`) VALUES (:today, 1) 
+                      ON DUPLICATE KEY UPDATE `facebook_share` = `facebook_share` + 1 ";
+            $stmt = $this->pdo->prepare($query);
+            $stmt->bindParam(":today", $today);
+            $res = $stmt->execute();
+
+            if ($res === true) {
+                $result = $stmt->rowCount();
+            } else {
+                
+                // log it
+                parent::logResError($this->_name, "addFacebookShareLog", $res);
+                return false;
+            }
+        } catch (PDOException $e) {
+
+            // log it
+            parent::logPDOError($this->_name, "addFacebookShareLog", $e);
+            return false;
+        }
+        return $result;
+    }
+
+    /**
+     * 新增 至官網造訪 LOG
+     * 
+     * @return int 
+     * @access public
+     */
+    public function addOfficialClickLog() 
+    {
+        $today = date("Y-m-d");
+
+        if (!is_object($this->pdo))
+            $this->connect($DBConfig["Master"]);
+
+        try {
+            $query = "INSERT INTO $this->_name (`log_date`, `official_click`) VALUES (:today, 1) 
+                      ON DUPLICATE KEY UPDATE `official_click` = `official_click` + 1 ";
+            $stmt = $this->pdo->prepare($query);
+            $stmt->bindParam(":today", $today);
+            $res = $stmt->execute();
+
+            if ($res === true) {
+                $result = $stmt->rowCount();
+            } else {
+                
+                // log it
+                parent::logResError($this->_name, "addOfficialClickLog", $res);
+                return false;
+            }
+        } catch (PDOException $e) {
+
+            // log it
+            parent::logPDOError($this->_name, "addOfficialClickLog", $e);
+            return false;
+        }
+        return $result;
+    }
+
+    /**
+     * 新增 尋寶去 LOG
+     * 
+     * @return int
+     * @access public
+     */
+    public function addStartGameClickLog() 
+    {
+        $today = date("Y-m-d");
+
+        if (!is_object($this->pdo))
+            $this->connect($DBConfig["Master"]);
+
+        try {
+            $query = "INSERT INTO $this->_name (`log_date`, `start_game`) VALUES (:today, 1) 
+                      ON DUPLICATE KEY UPDATE `start_game` = `start_game` + 1 ";
+            $stmt = $this->pdo->prepare($query);
+            $stmt->bindParam(":today", $today);
+            $res = $stmt->execute();
+
+            if ($res === true) {
+                $result = $stmt->rowCount();
+            } else {
+                
+                // log it
+                parent::logResError($this->_name, "addStartGameClickLog", $res);
+                return false;
+            }
+        } catch (PDOException $e) {
+
+            // log it
+            parent::logPDOError($this->_name, "addStartGameClickLog", $e);
+            return false;
+        }
+        return $result;
+    }
+
+    /**
+     * 新增 MOLOME CLICK LOG
+     * 
+     * @return int
+     * @access public
+     */
+    public function addMolomeClickLog() 
+    {
+        $today = date("Y-m-d");
+
+        if (!is_object($this->pdo))
+            $this->connect($DBConfig["Master"]);
+
+        try {
+            $query = "INSERT INTO $this->_name (`log_date`, `molome_click`) VALUES (:today, 1) 
+                      ON DUPLICATE KEY UPDATE `molome_click` = `molome_click` + 1 ";
+            $stmt = $this->pdo->prepare($query);
+            $stmt->bindParam(":today", $today);
+            $res = $stmt->execute();
+
+            if ($res === true) {
+                $result = $stmt->rowCount();
+            } else {
+                
+                // log it
+                parent::logResError($this->_name, "addMolomeClickLog", $res);
+                return false;
+            }
+        } catch (PDOException $e) {
+
+            // log it
+            parent::logPDOError($this->_name, "addMolomeClickLog", $e);
+            return false;
+        }
+        return $result;
+    }
+
+    /**
+     * 新增 活動頁連結(對照Hero) LOG
+     * 
+     * @return int
+     * @access public
+     */
+    public function addInviteActiveClickLog() 
+    {
+        $today = date("Y-m-d");
+
+        if (!is_object($this->pdo))
+            $this->connect($DBConfig["Master"]);
+
+        try {
+            $query = "INSERT INTO $this->_name (`log_date`, `invite_active_click`) VALUES (:today, 1) 
+                      ON DUPLICATE KEY UPDATE `invite_active_click` = `invite_active_click` + 1 ";
+            $stmt = $this->pdo->prepare($query);
+            $stmt->bindParam(":today", $today);
+            $res = $stmt->execute();
+
+            if ($res === true) {
+                $result = $stmt->rowCount();
+            } else {
+                
+                // log it
+                parent::logResError($this->_name, "addInviteActiveClickLog", $res);
+                return false;
+            }
+        } catch (PDOException $e) {
+
+            // log it
+            parent::logPDOError($this->_name, "addInviteActiveClickLog", $e);
+            return false;
+        }
+        return $result;
+    }
+
+    /**
+     * 新增 官網連結(對照Hero) LOG
+     * 
+     * @return int
+     * @access public
+     */
+    public function addInviteOfficialClickLog() 
+    {
+        $today = date("Y-m-d");
+
+        if (!is_object($this->pdo))
+            $this->connect($DBConfig["Master"]);
+
+        try {
+            $query = "INSERT INTO $this->_name (`log_date`, `invite_official_click`) VALUES (:today, 1) 
+                      ON DUPLICATE KEY UPDATE `invite_official_click` = `invite_official_click` + 1 ";
+            $stmt = $this->pdo->prepare($query);
+            $stmt->bindParam(":today", $today);
+            $res = $stmt->execute();
+
+            if ($res === true) {
+                $result = $stmt->rowCount();
+            } else {
+                
+                // log it
+                parent::logResError($this->_name, "addInviteOfficialClickLog", $res);
+                return false;
+            }
+        } catch (PDOException $e) {
+
+            // log it
+            parent::logPDOError($this->_name, "addInviteOfficialClickLog", $e);
+            return false;
+        }
+        return $result;
+    }
+
+    /**
+     * 新增 邀請頁面人次(對照Hero) LOG
+     * 
+     * @return int
+     * @access public
+     */
+    public function addInvitePageLog() 
+    {
+        $today = date("Y-m-d");
+
+        if (!is_object($this->pdo))
+            $this->connect($DBConfig["Master"]);
+
+        try {
+            $query = "INSERT INTO $this->_name (`log_date`, `invite_page`) VALUES (:today, 1) 
+                      ON DUPLICATE KEY UPDATE `invite_page` = `invite_page` + 1 ";
+            $stmt = $this->pdo->prepare($query);
+            $stmt->bindParam(":today", $today);
+            $res = $stmt->execute();
+
+            if ($res === true) {
+                $result = $stmt->rowCount();
+            } else {
+                
+                // log it
+                parent::logResError($this->_name, "addInvitePageLog", $res);
+                return false;
+            }
+        } catch (PDOException $e) {
+
+            // log it
+            parent::logPDOError($this->_name, "addInvitePageLog", $e);
+            return false;
+        }
+        return $result;
+    }
+
+    /**
+     * 新增 前往粉絲團(對照Hero) LOG
+     * 
+     * @return int
+     * @access public
+     */
+    public function addFansClickLog() 
+    {
+        $today = date("Y-m-d");
+
+        if (!is_object($this->pdo))
+            $this->connect($DBConfig["Master"]);
+
+        try {
+            $query = "INSERT INTO $this->_name (`log_date`, `fans_click`) VALUES (:today, 1) 
+                      ON DUPLICATE KEY UPDATE `fans_click` = `fans_click` + 1 ";
+            $stmt = $this->pdo->prepare($query);
+            $stmt->bindParam(":today", $today);
+            $res = $stmt->execute();
+
+            if ($res === true) {
+                $result = $stmt->rowCount();
+            } else {
+                
+                // log it
+                parent::logResError($this->_name, "addFansClickLog", $res);
+                return false;
+            }
+        } catch (PDOException $e) {
+
+            // log it
+            parent::logPDOError($this->_name, "addFansClickLog", $e);
+            return false;
+        }
+        return $result;
+    }
+
+    /**
+     * 新增 LOGIN 點擊 LOG
+     * 
+     * @return int
+     * @access public
+     */
+    public function addLoginClickLog() 
+    {
+        $today = date("Y-m-d");
+
+        if (!is_object($this->pdo))
+            $this->connect($DBConfig["Master"]);
+
+        try {
+            $query = "INSERT INTO $this->_name (`log_date`, `login_click`) VALUES (:today, 1) 
+                      ON DUPLICATE KEY UPDATE `login_click` = `login_click` + 1 ";
+            $stmt = $this->pdo->prepare($query);
+            $stmt->bindParam(":today", $today);
+            $res = $stmt->execute();
+
+            if ($res === true) {
+                $result = $stmt->rowCount();
+            } else {
+                
+                // log it
+                parent::logResError($this->_name, "addLoginClickLog", $res);
+                return false;
+            }
+        } catch (PDOException $e) {
+
+            // log it
+            parent::logPDOError($this->_name, "addLoginClickLog", $e);
+            return false;
+        }
+        return $result;
+    }
+}
+?>

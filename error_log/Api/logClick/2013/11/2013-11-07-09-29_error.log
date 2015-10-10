@@ -1,0 +1,24 @@
+2013-11-07 09:29:25 logClick > Array
+(
+    [action] => logClick
+    [method] => post
+    [ip] => 127.0.0.1
+    [today] => 2013-11-07
+    [now] => 2013-11-07 09:29:25
+    [click] => 6
+    [message] => LOG記錄失敗。
+)
+
+
+2013-11-07 09:29:49 logClick > Array
+(
+    [action] => logClick
+    [method] => post
+    [ip] => 127.0.0.1
+    [today] => 2013-11-07
+    [now] => 2013-11-07 09:29:49
+    [click] => 6
+    [message] => LOG記錄失敗。
+)
+
+

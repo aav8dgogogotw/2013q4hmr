@@ -1,0 +1,126 @@
+<?php
+
+function resourcePost($api, $tools, $param)
+{
+    $param["click"] = $tools->sql_injection_anti($_POST["click"]);
+
+    if (empty($param["click"])) {
+        
+        // log it
+        $log_param = Array();
+        $log_param = $param;
+        $log_param["message"] = "資料不齊全，請重新輸入。";
+        // $api->setApiErrorLog($this->resource, $log_param);
+
+        $api->setError($log_param["message"]);
+        unset($param);
+        return;
+    }
+
+    include_once (LIB_PATH . 'Table/LogClick.class.php');
+
+    $logClick = new logClick();
+
+    $sql_param = Array();
+
+    /**
+     * click
+     *
+     * - 1: index_click 活動首頁
+     * - 2: intro_click 遊戲介紹
+     * - 3: active_click 活動辦法
+     * - 4: award_click 得獎名單
+     * - 5: facebook_share 分享到FACEBOOK
+     * - 6: official_click 至官網造訪
+     * - 7: start_game "尋寶去"點擊
+     * - 8: molome_click MOLOME點擊
+     * - 9: invite_active_click 活動頁連結(對照Hero)
+     * - 10: invite_official_click 官網連結(對照Hero)
+     * - 11: invite_page 邀請頁面人次(對照Hero)
+     * - 12: fans_click 前往粉絲團(對照Hero)
+     * - 13: login_click 登入點擊
+     */
+    switch ($param["click"]) {
+        case "1":
+            $affectedRow = $logClick->addIndexClickLog();
+            break;
+
+        case "2":
+            $affectedRow = $logClick->addIntroClickLog();
+            break;
+
+        case "3":
+            $affectedRow = $logClick->addActiveClickLog();
+            break;
+
+        case "4":
+            $affectedRow = $logClick->addAwardClickLog();
+            break;
+
+        case "5":
+            $affectedRow = $logClick->addFacebookShareLog();
+            break;
+
+        case "6":
+            $affectedRow = $logClick->addOfficialClickLog();
+            break;
+
+        case "7":
+            $affectedRow = $logClick->addStartGameClickLog();
+            break;
+
+        case "8":
+            $affectedRow = $logClick->addMolomeClickLog();
+            break;
+
+        case "9":
+            $affectedRow = $logClick->addInviteActiveClickLog();
+            break;
+
+        case "10":
+            $affectedRow = $logClick->addInviteOfficialClickLog();
+            break;
+
+        case "11":
+            $affectedRow = $logClick->addInvitePageLog();
+            break;
+
+        case "12":
+            $affectedRow = $logClick->addFansClickLog();
+            break;
+
+        case "13":
+            $affectedRow = $logClick->addLoginClickLog();
+            break;
+
+        default:
+
+            // log it
+            $log_param = Array();
+            $log_param = $param;
+            $log_param["message"] = "資料不齊全，請重新輸入。";
+            $api->setApiErrorLog($param["action"], $log_param);
+
+            $api->setError($log_param["message"]);
+            unset($param);
+            return;
+    }
+    
+    if (empty($affectedRow)) {
+
+        // log it
+        $log_param = Array();
+        $log_param = $param;
+        $log_param["message"] = "LOG記錄失敗。";
+        $api->setApiErrorLog($param["action"], $log_param);
+
+        $api->setError($log_param["message"]);
+        unset($param);
+        return;
+    }
+    unset($sql_param);
+    
+    $output["last_id"] = $lastId;
+    $api->setOutput("LOG記錄成功。", $output);
+}
+?>

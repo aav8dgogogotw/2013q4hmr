@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* CSS Document */
+.sortabledemo_inside {
+	float: left;
+	width: 960px;
+	overflow: hidden;
+	/*border: 1px solid #F4F4F4;*/
+	background:#FFFFFF;
+	padding:0 0 0 0;
+	text-align: left;
+	display: block;
+}
+.sortabledemo {
+	width:900px;
+	cursor:move;
+	list-style-type:none;
+	padding:0 0 0 0;
+	margin:0 0 0 0;
+}
+
+

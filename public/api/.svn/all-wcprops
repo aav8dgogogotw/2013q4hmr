@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/maritimeera/!svn/ver/10/trunk/public/api
+END
+active.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/maritimeera/!svn/ver/65/trunk/public/api/active.php
+END
+invite.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/maritimeera/!svn/ver/10/trunk/public/api/invite.php
+END
+user.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/maritimeera/!svn/ver/65/trunk/public/api/user.php
+END
+awardsn.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/maritimeera/!svn/ver/107/trunk/public/api/awardsn.php
+END
+lottery.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/maritimeera/!svn/ver/69/trunk/public/api/lottery.php
+END
+log_share.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/maritimeera/!svn/ver/10/trunk/public/api/log_share.php
+END
+log_like.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/maritimeera/!svn/ver/10/trunk/public/api/log_like.php
+END
+log_act_start.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/maritimeera/!svn/ver/42/trunk/public/api/log_act_start.php
+END
+log_click.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/maritimeera/!svn/ver/99/trunk/public/api/log_click.php
+END
+friend.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/maritimeera/!svn/ver/72/trunk/public/api/friend.php
+END
+fans.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/maritimeera/!svn/ver/42/trunk/public/api/fans.php
+END
+request.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/maritimeera/!svn/ver/92/trunk/public/api/request.php
+END

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/maritimeera/!svn/ver/11/trunk/public/admin/templates
+END
+title.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/maritimeera/!svn/ver/15/trunk/public/admin/templates/title.tpl
+END
+welcome.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/maritimeera/!svn/ver/15/trunk/public/admin/templates/welcome.tpl.php
+END
+menu.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/maritimeera/!svn/ver/15/trunk/public/admin/templates/menu.tpl
+END
+header.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/maritimeera/!svn/ver/68/trunk/public/admin/templates/header.tpl
+END
+sub_menu.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/maritimeera/!svn/ver/15/trunk/public/admin/templates/sub_menu.tpl
+END
+footer.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/maritimeera/!svn/ver/15/trunk/public/admin/templates/footer.tpl
+END
+login.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/maritimeera/!svn/ver/15/trunk/public/admin/templates/login.tpl.php
+END

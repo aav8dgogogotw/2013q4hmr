@@ -1,0 +1,454 @@
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-color: #FFFFFF;
+}
+input {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333333;
+}
+textarea {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333333;
+}
+
+select {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333333;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #D54E21;
+}
+
+
+a {
+	color: #4C2523;
+	blr:expression(this.onFocus=this.blur());
+	outline:none;
+	text-decoration: none;
+}
+
+
+.copyright {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	text-indent: 20px;
+}
+#footerline {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	text-decoration: none;
+	vertical-align: baseline;
+}
+#footermenu {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+	text-decoration: none;
+	vertical-align: baseline;
+	margin: 15px;
+	text-align: right;
+}
+#footermenu:hover {
+	text-decoration: underline;
+}
+.small {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #565656;
+	line-height: 18px;
+}
+.smalllink {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+
+	color: #4C2523;
+	text-decoration: none;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+#store-title {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #666666;
+}
+#topmenu-line {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #666666;
+}
+#topmenu {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #666666;
+	margin-right: 10px;
+	margin-left: 10px;
+	text-decoration: none;
+}
+#topmenuon {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #A07A71;
+	margin-right: 10px;
+	margin-left: 10px;
+	text-decoration: none;
+}
+#product-categoryhead {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+	background-image: url(product-categoryhead.gif);
+	background-repeat: no-repeat;
+	height: 25px;
+	width: 170px;
+	line-height: 25px;
+	display: block;
+	text-indent: 20px;
+	font-size: 12px;
+	color: 666666;
+	font-weight: bold;
+}
+#product-category {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+	background-image: url(product-category.gif);
+	background-repeat: repeat-y;
+	height: 30px;
+	width: 170px;
+	line-height: 30px;
+	display: block;
+	text-indent: 20px;
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;
+}
+#product-categorymodel{
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+	background-image: url(product-category.gif);
+	background-repeat: repeat-y;
+	height: 25px;
+	width: 170px;
+	line-height: 25px;
+	display: block;
+	text-indent: 35px;
+	font-size: 11px;
+	color: #666666;
+	text-decoration: none;
+}
+#product-categorymodel-on{
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+	background-image: url(product-category.gif);
+	background-repeat: repeat-y;
+	height: 25px;
+	width: 170px;
+	line-height: 25px;
+	display: block;
+	text-indent: 35px;
+	font-size: 11px;
+	color: #A07A71;
+	text-decoration: none;
+}
+#product-categorybottom {
+	background-image: url(product-category-bottom.gif);
+	background-repeat: no-repeat;
+	height: 20px;
+	width: 170px;
+	line-height: 20px;
+	display: block;
+
+}
+#product-categorymodel:hover {
+	text-decoration: underline;
+		color: #4C2523;
+}
+#product-category:hover {
+	text-decoration: underline;
+		color: #4C2523;
+}
+#topmenu:hover {
+	text-decoration: underline;
+		color: #4C2523;
+}
+#leftmenu-head {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+	background-image: url(leftmenu-head.gif);
+	background-repeat: no-repeat;
+	height: 30px;
+	width: 170px;
+	line-height: 30px;
+	display: block;
+	text-indent: 20px;
+	font-size: 12px;
+	color: #666666;
+	font-weight: bold;
+}
+#leftmenu-content{
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+	background-repeat: repeat-y;
+	display: block;
+	font-size: 12px;
+	color: #666666;
+}
+
+#product-title{
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #666666;
+	font-weight: bold;
+}
+
+#product-modelname{
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #666666;
+	font-weight: bold;
+	text-align: center;
+	height: 20px;
+	width: 145px;
+	display: block;
+	line-height: 20px;
+}
+#product-price{
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #A07A71;
+	font-weight: bold;
+	line-height: 30px;
+	display: block;
+	background-position: center;
+	text-align: center;
+	height: 30px;
+	width: 145px;
+	text-decoration: none;
+}
+#product-price:hover{
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	font-weight: bold;
+	line-height: 30px;
+	display: block;
+	background-position: center;
+	text-align: center;
+	height: 30px;
+	width: 145px;
+	text-decoration: none;
+	background-color: #A07A71;
+}
+.pop-model{
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #666666;
+	font-weight: bold;
+	line-height: 20px;
+	background-position: center;
+	text-align: center;
+	text-decoration: none;
+}
+.pop-price{
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #999999;
+	line-height: 20px;
+	background-position: center;
+	text-align: center;
+	text-decoration: none;
+}
+#buy-head{
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #FFFFFF;
+	line-height: 40px;
+	text-decoration: none;
+	font-weight: bold;
+	background-image: url(buy-head.gif);
+	background-repeat: no-repeat;
+	display: block;
+	height: 40px;
+	width: 230px;
+	text-indent: 10px;
+}
+#buy-body{
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	text-decoration: none;
+	line-height: 25px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+#buy-body2{
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	text-decoration: none;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+#buy-button{
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	text-decoration: none;
+	display: block;
+	background-image: url(buy-button.gif);
+	background-repeat: no-repeat;
+	height: 40px;
+	width: 230px;
+}
+#buy-line{
+	background-image: url(buy-line.gif);
+	background-repeat: no-repeat;
+	display: block;
+	height: 8px;
+	width: 230px;
+}
+#buy-footer{
+	background-image: url(buy-footer.gif);
+	background-repeat: no-repeat;
+	display: block;
+	height: 30px;
+	width: 230px;
+}
+.model-title {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #666666;
+	line-height: 30px;
+	font-weight: bold;
+}
+.model-content {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #666666;
+	line-height: 25px;
+}
+#model-linkto{
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #A07A71;
+	line-height: 40px;
+	text-decoration: none;
+}
+#model-linkto:hover{
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #A07A71;
+	line-height: 40px;
+	text-decoration: underline;
+}
+.spec-content {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 20px;
+	color: #000000;
+}
+.faq {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #666666;
+}
+.faq-a {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #A07A71;
+}
+#hor-line{
+	background-image: url(hor-line.gif);
+	background-repeat: repeat-x;
+}
+.overall-content {
+
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 25px;
+	color: #666666;
+}
+.overall-title {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	line-height: 25px;
+	color: #A07A71;
+	font-weight: bold;
+}
+#account-menu-on {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #A07A71;
+	text-decoration: none;
+	margin-right: 20px;
+	margin-left: 20px;
+
+	line-height: 40px;
+}
+#account-menu {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #666666;
+	text-decoration: none;
+	margin-right: 20px;
+	margin-left: 20px;
+
+
+	line-height: 40px;
+}
+#account-menu:hover {
+	text-decoration: underline;
+
+}
+.red {
+
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 25px;
+	color: #FF0000;
+}
+#cart-head {
+
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #FFFFFF;
+	line-height: 40px;
+	text-decoration: none;
+	font-weight: bold;
+	background-image: url(cart-head.gif);
+	background-repeat: no-repeat;
+	display: block;
+	height: 40px;
+	width: 300px;
+	text-indent: 10px;
+}
+#cart-footer {
+
+	background-image: url(cart-footer.gif);
+	background-repeat: no-repeat;
+	display: block;
+	height: 45px;
+	width: 300px;
+}
+.amount {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	width: 20px;
+	line-height: 20px;
+	text-align: right;
+}
+.amount-bold {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #564440;
+	font-weight: bold;
+}
+#data {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #666666;
+	text-decoration: none;
+	margin-left: 10px;
+}

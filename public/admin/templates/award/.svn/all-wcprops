@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/maritimeera/!svn/ver/15/trunk/public/admin/templates/award
+END
+list.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/maritimeera/!svn/ver/52/trunk/public/admin/templates/award/list.tpl.php
+END
+show.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/maritimeera/!svn/ver/15/trunk/public/admin/templates/award/show.tpl.php
+END
+edit.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/maritimeera/!svn/ver/26/trunk/public/admin/templates/award/edit.tpl.php
+END
